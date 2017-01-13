@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/blue_title" />
+
+
+    <com.kunzhuo.xuechelang.widget.emouse.EmoticonsEditText
+        android:id="@+id/id_comEdit"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_bg"
+        android:gravity="left|top"
+        android:hint="输入评论内容"
+        android:maxLines="150"
+        android:textColor="#3D4245"
+        android:textColorHint="#D3D3D3" />
+
+    <FrameLayout
+        android:id="@+id/chat_layout_emote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.kunzhuo.xuechelang.widget.emouse.EmoteInputView
+            android:id="@+id/chat_emoview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" />
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/id_comBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_selector"
+        android:text="提   交"
+        android:textColor="@color/whilte"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

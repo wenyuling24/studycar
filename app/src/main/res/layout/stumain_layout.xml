@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.kunzhuo.xuechelang.widget.PagerSlidingTabStrip xmlns:tabs="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/index_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        tabs:pstsIndicatorColor="@color/main_color"
+        tabs:pstsTabPaddingLeftRight="10dp" />
+
+
+    <com.kunzhuo.xuechelang.widget.NoScrollViewPager
+        android:id="@+id/viewpager_study"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/index_tabs">
+
+    </com.kunzhuo.xuechelang.widget.NoScrollViewPager>
+
+
+</LinearLayout>

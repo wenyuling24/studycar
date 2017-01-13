@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.kunzhuo.xuechelang.widget.PullDownScrollView
+        android:id="@+id/refresh_root"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.kunzhuo.xuechelang.widget.MyScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/sc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.kunzhuo.xuechelang.widget.WrapRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <fragment
+                        android:id="@+id/fragment_banner"
+                        class="com.kunzhuo.xuechelang.view.fragment.ImageViewPagerFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.kunzhuo.xuechelang.widget.WrapRelativeLayout>
+
+                <include layout="@layout/secondfour_layout" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray_bg" />
+
+
+                <RelativeLayout
+                    android:id="@+id/id_wraplayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--<fragment-->
+                    <!--android:id="@+id/fragment_banner2"-->
+                    <!--class="com.kunzhuo.xuechelang.view.fragment.ImageViewPagerFragment"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                    <LinearLayout
+                        android:id="@+id/id_wrapLinearlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/id_shixueImg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_01left" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/gray_bg" />
+
+                        <ImageView
+                            android:id="@+id/id_shijiaImg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_02right" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_below="@id/id_wrapLinearlayout"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray_bg" />
+
+                </RelativeLayout>
+
+                <include layout="@layout/secondtwobtn_layout" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/button_yellow"
+                    android:text="广告条"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="搞笑学车视频"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/white" />
+
+                <com.kunzhuo.xuechelang.widget.MyGridView
+                    android:id="@+id/second_gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray_bg" />
+
+                <com.kunzhuo.xuechelang.widget.MyListView
+                    android:id="@+id/id_Novicelistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/gray_bg"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/gray_bg" />
+
+                <com.kunzhuo.xuechelang.widget.MyGridView
+                    android:id="@+id/second_gridView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray_bg" />
+
+                <com.kunzhuo.xuechelang.widget.MyListView
+                    android:id="@+id/id_Novicelistview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/gray_bg"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray_bg" />
+
+
+                <include layout="@layout/todaytop_layout" />
+
+                <TextView
+                    android:id="@+id/id_videoPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="科目视频"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/white" />
+
+                <com.kunzhuo.xuechelang.widget.MyGridView
+                    android:id="@+id/second_gridCourseView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/gray_bg" />
+
+
+                <com.kunzhuo.xuechelang.widget.MyListView
+                    android:id="@+id/first_videoCourselistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/gray_bg"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_bg" />
+
+                <com.kunzhuo.xuechelang.widget.MyGridView
+                    android:id="@+id/second_gridCourseView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/gray_bg" />
+
+            </LinearLayout>
+
+
+        </com.kunzhuo.xuechelang.widget.MyScrollView>
+
+    </com.kunzhuo.xuechelang.widget.PullDownScrollView>
+
+</LinearLayout>

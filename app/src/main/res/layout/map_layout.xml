@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/id_rightFrame"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/id_mapBtnshowCoach"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_normal"
+            android:padding="10dp"
+            android:text="教练展示"
+            android:textColor="@color/whilte"
+            android:textSize="14dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/id_bottomFrame"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/id_mapBtnmade"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_normal"
+            android:padding="20dp"
+            android:text="招生制作"
+            android:textColor="@color/whilte"
+            android:textSize="16dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_marker_info"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#CC4e5a6b"
+        android:layout_marginBottom="2dp"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <com.kunzhuo.xuechelang.widget.CustomImageView
+            android:id="@+id/coach_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            app:radius="5dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/icon_avtar" />
+
+        <TextView
+            android:id="@+id/coach_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coach_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="名称"
+            android:textColor="@color/whilte"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/coach_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coach_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/whilte"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/coach_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coach_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/whilte"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

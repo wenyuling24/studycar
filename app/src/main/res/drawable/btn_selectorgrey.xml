@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 设置聚焦和按下时的状态 -->
+    <item android:drawable="@drawable/btn_selected" android:state_focused="true"/>
+    <item android:drawable="@drawable/btn_selected" android:state_pressed="true"/>
+    <!-- 设置平常状态 -->
+    <item android:drawable="@drawable/btn_while"/>
+
+</selector>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="whilte">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 程序主要橙色(?红色) -->
+    <color name="main_color">#FE4D3D</color>
+    <!-- 主色选中颜色 -->
+    <color name="red_dark">#a34238</color>
+    <!-- 一般灰色背景 -->
+    <color name="gray_bg">#dddddd</color>
+    <!-- 橙色背景 -->
+    <color name="orange_bg">#FE7E00</color>
+    <!--正确绿色-->
+    <color name="green_bg">#2AC416</color>
+    <!--错误红色-->
+    <color name="red_bg">#E4484A</color>
+    <!--加盟 黄色-->
+    <color name="yellow">#FFB904</color>
+    <color name="yellow_xiaozi">#FFDA44</color>
+    <color name="green_bga">#00D3AB</color>
+    <color name="red_bga">#FF5B35</color>
+    <color name="blue_bga">#11BFF1</color>
+
+
+    <!-- 几乎看不见的灰，用作选中textview -->
+    <color name="gray_light_light">#f9f9f9</color>
+    <!-- 深浅灰，用作选择器 -->
+    <color name="gray_light">#c3c3c3</color>
+    <color name="gray_deep">#898989</color>
+    <!-- 半透明灰 -->
+    <color name="gray_transparent">#AA666666</color>
+
+    <!-- 文字颜色-浅 -->
+    <color name="textcolor_light">#999999</color>
+    <!-- 文字颜色-较浅 -->
+    <color name="textcolor_little_light">#757679</color>
+    <!-- 文字颜色 -较深 -->
+    <color name="textcolor_little_dark">#555555</color>
+    <!-- 文字颜色 -深 -->
+    <color name="textcolor_dark">#333333</color>
+    <!-- 文字选中颜色 -->
+    <color name="textcolor_selected">#FF5500</color>
+    <color name="textcolor_green">#51AE22</color>
+
+    <!-- 分割线颜色   shoplist -->
+    <color name="div_line">#E0E0E0</color>
+    <!-- 边框边沿颜色 -->
+    <color name="edge_color">#D9D9D9</color>
+    <!-- 分类界面蓝色 -->
+    <color name="blue_category">#A0CDEB</color>
+    <color name="divider_color">#ffdddddd</color>
+    <!-- 链接蓝色 -->
+    <color name="link_blue">#ff3993cf</color>
+    <color name="home_yellow">#F8E71C</color>
+    <color name="white">#f6f6f6</color>
+    <color name="black">#000000</color>
+    <!-- 自定义控件PagerSlidingTabStrip -->
+    <color name="background_tab_pressed">#eeeeee</color>
+    <!-- 按钮蓝色 -->
+    <color name="button_blue">#1BBBFB</color>
+    <!-- 按钮绿色 -->
+    <color name="button_green">#46B14D</color>
+    <!-- 按钮棕色 -->
+    <color name="button_brown">#E6836C</color>
+    <!-- 按钮黄色 -->
+    <color name="button_yellow">#F4AF35</color>
+
+    <!--分类选中颜色我也晓不得这是什么颜色-->
+    <color name="category_bg">#545E6D</color>
+
+    <!-- xlistview -->
+    <color name="background">#F7F4F0</color>
+    <color name="title_color">#333333</color>
+    <color name="record_book_light">#5B5D69</color>
+
+    <color name="bg_black">#383431</color>
+    <color name="bg_while">#FFFFFF</color>
+    <color name="banner_bg">#FAF1EF</color>
+
+    <!-- 主题颜色 -->
+    <color name="main">#FE6400</color>
+
+    <!--蓝色-->
+    <color name="blue">#1DACFA</color>
+
+    <!--蓝色-->
+    <color name="green">#08CD3C</color>
+
+    <!-- 烟白色 -->
+    <color name="common_grey_word">#ff999999</color>
+
+    <color name="blue_btn">#18b4ed</color>
+
+    <color name="albumback">#E1E0DE</color>
+    <color name="plugin_camera_black">#FFFFFF</color>
+    <color name="hint_color">#D3D3D3</color>
+
+    <color name="radio_button_selected_color">#ff3645A2</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+
+
+</resources>

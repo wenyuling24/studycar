@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#ffa1a1a1"
+        android:focusable="false" />
+
+    <com.kunzhuo.xuechelang.widget.ScrollLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollLayoutTest"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="#ffffff"></com.kunzhuo.xuechelang.widget.ScrollLayout>
+
+    <com.kunzhuo.xuechelang.widget.PageControlView
+        android:id="@+id/pageControl"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="#ffffff"
+        android:gravity="center" />
+
+</LinearLayout>

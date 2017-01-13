@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.kunzhuo.xuechelang.widget.PullDownScrollView
+        android:id="@+id/refresh_root"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.kunzhuo.xuechelang.widget.MyScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/sc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.kunzhuo.xuechelang.widget.WrapRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <fragment
+                        android:id="@+id/fragment_banner"
+                        android:name="com.kunzhuo.xuechelang.view.fragment.ImageViewPagerFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.kunzhuo.xuechelang.widget.WrapRelativeLayout>
+
+
+                <com.kunzhuo.xuechelang.widget.PagerSlidingTabStrip xmlns:tabs="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/train_Tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="10dp"
+                    tabs:pstsIndicatorColor="@color/main_color"
+                    tabs:pstsTabPaddingLeftRight="10dp" />
+
+                <com.kunzhuo.xuechelang.widget.AutoHeightViewPager
+                    android:id="@+id/train_Viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+        </com.kunzhuo.xuechelang.widget.MyScrollView>
+
+    </com.kunzhuo.xuechelang.widget.PullDownScrollView>
+
+</LinearLayout>

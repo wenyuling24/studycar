@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="RatingBar" tools:ignore="ResourceName">
+
+        <!-- 尺寸值 -->
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starCount" format="integer" />
+        <!-- 资源文件值 -->
+        <attr name="starEmpty" format="reference" />
+        <!-- 资源文件值 -->
+        <attr name="starFill" format="reference" />
+        <!-- 资源文件值 -->
+        <attr name="starHalf" format="reference" />
+        <!-- boolean值 -->
+        <attr name="clickable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <!-- 根据横宽比自适应图片 -->
+    <declare-styleable name="WrapImageView">
+        <attr name="widthPerHeight" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="DotView">
+        <attr name="count" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MyImageView">
+        <attr name="ratio" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="Theme">
+        <attr name="customImageViewStyle" format="reference" />
+    </declare-styleable>
+    <!-- 自定义圆角ImageView -->
+    <declare-styleable name="CustomImageView">
+        <attr name="circle" format="boolean" />
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
+
+    <attr name="rightPadding" format="dimension" />
+    <attr name="leftPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+        <attr name="leftPadding" />
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+    </declare-styleable>
+
+</resources>

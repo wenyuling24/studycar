@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/my_itemtitle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f6f6f6" />
+
+    <LinearLayout
+        android:id="@+id/id_addWeichatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.kunzhuo.xuechelang.widget.CustomImageView
+            android:id="@+id/id_addweichatImg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_avtar"
+            app:circle="true" />
+
+        <TextView
+            android:id="@+id/id_addweichatNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="微信昵称1"
+            android:textColor="@color/title_color"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/id_identifyLoginPhone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_bg"
+        android:hint="手机号"
+        android:paddingLeft="10dp"
+        android:textColor="@color/title_color"
+        android:textColorHint="#D3D3D3"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/id_identifyLogincode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:hint="验证码"
+            android:paddingLeft="10dp"
+            android:textColor="@color/title_color"
+            android:textColorHint="#D3D3D3"
+            android:textSize="16sp" />
+
+        <com.kunzhuo.xuechelang.widget.TimeButton
+            android:id="@+id/id_identifyLoginBtngetIndentify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="获取验证码"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/identifyLogin_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_selector"
+        android:text="登  录"
+        android:textColor="@color/whilte"
+        android:textSize="14sp" />
+
+</LinearLayout>

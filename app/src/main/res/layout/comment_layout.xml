@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kunzhuo.xuechelang.widget.CustomImageView
+            android:id="@+id/id_comImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            app:circle="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_avtar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/id_comImg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/id_comImg">
+
+            <TextView
+                android:id="@+id/id_comName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textColor="@color/gray_deep"
+                android:textSize="13sp" />
+
+            <com.kunzhuo.xuechelang.widget.emouse.EmoticonsTextView
+                android:id="@+id/id_comTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_comName"
+                android:layout_marginTop="5dp"
+                android:maxLines="2"
+                android:text="我是内容"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/id_comTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/id_comTxt"
+                android:layout_marginTop="10dp"
+                android:text="2016-09-17"
+                android:textColor="@color/gray_deep"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.kunzhuo.xuechelang.widget.MyGridView
+        android:id="@+id/detail_gridCourseView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_bg" />
+
+
+    <com.kunzhuo.xuechelang.widget.MyGridView
+        android:id="@+id/detail_gridCourseView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_bg" />
+
+
+    <com.kunzhuo.xuechelang.widget.MyGridView
+        android:id="@+id/detail_gridCourseView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_bg" />
+
+    <com.kunzhuo.xuechelang.widget.MyGridView
+        android:id="@+id/detail_gridCourseView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_bg" />
+
+    <com.kunzhuo.xuechelang.widget.MyGridView
+        android:id="@+id/detail_gridCourseView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/whilte" />
+
+
+</LinearLayout>

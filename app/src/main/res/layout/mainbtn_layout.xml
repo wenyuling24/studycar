@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/id_firstBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_firstTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="科目一"
+                android:textColor="@color/red_bg"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/id_firstColor"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@id/id_firstTxt"
+                android:layout_alignRight="@id/id_firstTxt"
+                android:layout_below="@id/id_firstTxt"
+                android:layout_marginTop="20dp"
+                android:background="@color/red_bg" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_secondBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_secondTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="科目二"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/id_secondColor"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@id/id_secondTxt"
+                android:layout_alignRight="@id/id_secondTxt"
+                android:layout_below="@id/id_secondTxt"
+                android:layout_marginTop="20dp"
+                android:background="@color/whilte" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_threeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_threeTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="科目三"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/id_threeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@id/id_threeTxt"
+                android:layout_alignRight="@id/id_threeTxt"
+                android:layout_below="@id/id_threeTxt"
+                android:layout_marginTop="20dp"
+                android:background="@color/whilte" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_fourBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_fourTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="科目四"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/id_fourColor"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@id/id_fourTxt"
+                android:layout_alignRight="@id/id_fourTxt"
+                android:layout_below="@id/id_fourTxt"
+                android:layout_marginTop="20dp"
+                android:background="@color/whilte" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

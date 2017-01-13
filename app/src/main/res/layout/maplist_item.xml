@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/id_layoutLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <com.kunzhuo.xuechelang.widget.CustomImageView
+                android:id="@+id/id_maplistImg"
+                android:layout_width="60dp"
+                app:radius="5dp"
+                android:layout_height="60dp"
+                android:src="@drawable/icon_avtar" />
+
+            <TextView
+                android:id="@+id/id_maplistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_maplistImg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="教练名字"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/id_layoutLeft">
+
+            <TextView
+                android:id="@+id/id_maplistAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是具体位置"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/id_phoneLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_maplistAddress"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/id_maplistPhoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="电话号码"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/id_maplistType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/id_maplistPhoneNum"
+                    android:text="教练类型"
+                    android:textColor="@color/title_color"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_phoneLayout"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/id_maplistMarkerIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_marker" />
+
+                <TextView
+                    android:id="@+id/id_maplistDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/id_maplistMarkerIcon"
+                    android:text="0.24km"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:id="@+id/id_maplistMoreBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn_seletorblue"
+                        android:text="更多信息"
+                        android:textColor="@color/whilte"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/id_maplistPhone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/id_maplistMoreBtn"
+                        android:src="@drawable/icon_call" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
